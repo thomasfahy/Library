@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pageTitle{
+    font-size: 3rem;
+    padding: 1rem;
+    color: #303030;
+    font-weight: 800;
+}
+
+.header{
+    background-color: #D1E8E2;
+}
