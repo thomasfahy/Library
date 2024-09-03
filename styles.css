@@ -9,17 +9,27 @@
 
 .pageTitle{
     font-size: 3rem;
-    padding: 1rem;
-    padding-left: 5rem;
     color: #303030;
     font-weight: 800;
 }
 
 .header{
     background-color: #D1E8E2;
+    margin-bottom: 1rem;
 }
 
-.headerDesc{
+.hDescText{
     padding-left: 5rem;
     padding-right: 5rem;
+}
+#headerImg{
+    height: 3rem;
+    margin-top: 2px;
+}
+.headerTitle{
+    display: grid;
+    grid-template-columns: 1fr 30fr;
+    gap: 1rem;
+    padding: 1rem;
+    padding-left: 5rem;
 }
