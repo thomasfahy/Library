@@ -15,12 +15,15 @@
 
 .header{
     background-color: #D1E8E2;
-    margin-bottom: 1rem;
+    padding-bottom: 1.3rem;
+    display: grid;
+    grid-template-columns: minmax(550px, 1fr);
 }
 
 .hDescText{
     padding-left: 5rem;
     padding-right: 5rem;
+    font-size: 1.3rem;
 }
 #headerImg{
     height: 3rem;
