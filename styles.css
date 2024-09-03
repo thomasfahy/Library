@@ -36,3 +36,10 @@
     padding: 1rem;
     padding-left: 5rem;
 }
+
+/* Book Content */
+
+.content{
+    height: 80vh;
+    background-color: #D4A5A5;
+}
