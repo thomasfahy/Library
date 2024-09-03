@@ -1,0 +1,11 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "For the Odin Project",
+  "main": "#",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    --primary-color: #D4A5A5;
+    --secondary-color: #D1E8E2;
 }
 
 
@@ -14,10 +16,11 @@
 }
 
 .header{
-    background-color: #D1E8E2;
-    padding-bottom: 1.3rem;
+    background-color: var(--secondary-color);
+    padding-bottom: 1.5rem;
     display: grid;
-    grid-template-columns: minmax(550px, 1fr);
+    grid-template-columns: minmax(550px, 900px);
+    border: 1px solid rgb(139, 139, 139);
 }
 
 .hDescText{
@@ -39,7 +42,31 @@
 
 /* Book Content */
 
+.topContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    align-items: center;
+}
+
+.addButton{
+    height: 3rem;
+    width: 7rem;
+    border-radius: 3rem;
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    font-size: 1.3rem;
+}
+
+.contentTitle{
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #303030;
+}
+
 .content{
     height: 80vh;
-    background-color: #D4A5A5;
+    background-color: var(--primary-color);
 }
