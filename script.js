@@ -26,12 +26,14 @@ function Book(title, author, pages, read) {
   }
 }
 
-function addBookToLibrary() {
-    // do stuff here
-  }
 
 
+function addBookToLibrary(newBook) {
+    myLibrary.push(newBook);
+}
 
+function createBookCard(book, index){
+    const card = document.createElement('div');
+    card.className = 'card';
+}
 
-
-console.log(harryPotter.bookInfo());
