@@ -22,10 +22,11 @@ let book1 = new Book("Harry Potter", "JK Rowling", 435, true);
 let book2 = new Book("The Awakening", "L.J Smith", 256, false);
 let book3 = new Book("The Struggle", "L.J Smith", 304, false);
 let book4 = new Book("The Fury", "L.J Smith", 256, false);
+let book5 = new Book("The fast", "L.J Smith", 256, false);
 
 //Initialize library array
 
-const myLibrary = [book1,book2,book3,book4];
+const myLibrary = [book1,book2,book3,book4,book5];
 
 //Display the books to content screen
 
