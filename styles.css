@@ -4,6 +4,7 @@
     font-family: sans-serif;
     --primary-color: #D4A5A5;
     --secondary-color: #D1E8E2;
+    --third-color: #D1E8E2;
 }
 
 
@@ -70,3 +71,39 @@
     height: 80vh;
     background-color: var(--primary-color);
 }
+
+.book{
+    font-size: 1rem;
+    background-color: var(--third-color);
+    height: 8rem;
+    width: 13rem;
+    padding: 2rem;
+    border: 1px solid #303030;
+    border-radius: 15px;
+}
+
+#bookCards{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.bookTitle{
+    font-weight: 800;
+}
+
+@media (max-width: 700px) {
+    #bookCards {
+        grid-template-columns: 1fr 1fr; /* Change to one column */
+        grid-template-rows: auto;   /* Adjust rows automatically based on content */
+    }
+}
+@media (max-width: 500px) {
+    #bookCards {
+        grid-template-columns: 1fr; /* Change to one column */
+        grid-template-rows: auto;
+        padding-left: 5rem;   /* Adjust rows automatically based on content */
+    }
+}
+

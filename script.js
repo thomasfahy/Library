@@ -1,13 +1,3 @@
-//Initialize library array
-
-const myLibrary = [];
-
-//Create initial books
-
-let book1 = new Book("Harry Potter", "JK Rowling", 435, true);
-let book2 = new Book("The Awakening", "L.J Smith", 256, false);
-let book3 = new Book("The Struggle", "L.J Smith", 304, false);
-let book4 = new Book("The Fury", "L.J Smith", 256, false);
 
 //Book object initialized
 
@@ -26,7 +16,47 @@ function Book(title, author, pages, read) {
   }
 }
 
+//Create initial books
 
+let book1 = new Book("Harry Potter", "JK Rowling", 435, true);
+let book2 = new Book("The Awakening", "L.J Smith", 256, false);
+let book3 = new Book("The Struggle", "L.J Smith", 304, false);
+let book4 = new Book("The Fury", "L.J Smith", 256, false);
+
+//Initialize library array
+
+const myLibrary = [book1,book2,book3,book4];
+
+//Display the books to content screen
+
+function displayBooks(){
+  const libraryContainer = document.getElementById('bookCards');
+  libraryContainer.innerHTML = '';
+  myLibrary.forEach(book => {
+    const bookContainer = document.createElement('div');
+    bookContainer.classList.add('book');
+
+    const title = document.createElement('p');
+    title.textContent = `Title: ${book.title}`;
+
+
+    const author = document.createElement('p');
+    author.textContent = `Author: ${book.author}`;
+
+    const pages = document.createElement('p');
+    pages.textContent = `Pages: ${book.pages}`;
+
+    const isRead = document.createElement('p');
+    isRead.textContent = `Read: ${book.isRead ? "Yes" : "No"}`;
+
+    bookContainer.appendChild(title);
+    bookContainer.appendChild(author);
+    bookContainer.appendChild(pages);
+    bookContainer.appendChild(isRead);
+
+    libraryContainer.appendChild(bookContainer);
+  })
+}
 
 function addBookToLibrary(newBook) {
     myLibrary.push(newBook);
@@ -37,3 +67,4 @@ function createBookCard(book, index){
     card.className = 'card';
 }
 
+displayBooks();
