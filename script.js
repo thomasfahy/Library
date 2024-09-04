@@ -37,10 +37,11 @@ function displayBooks(){
     bookContainer.classList.add('book');
 
     const title = document.createElement('p');
-    title.textContent = `Title: ${book.title}`;
-
+    title.classList.add("bookTitle");
+    title.textContent = `${book.title}`;
 
     const author = document.createElement('p');
+
     author.textContent = `Author: ${book.author}`;
 
     const pages = document.createElement('p');
