@@ -51,13 +51,18 @@
     align-items: center;
 }
 
-.addButton{
+#addButton{
     height: 3rem;
     width: 7rem;
     border-radius: 3rem;
     background-color: var(--secondary-color);
     border: 1px solid black;
     font-size: 1.3rem;
+
+}
+#addButton:hover{
+    transform: scale(1.15);
+    background-color: #f7cc41;
 }
 
 .contentTitle{
@@ -134,9 +139,11 @@
     border-radius: 15px;
     height: 1.7rem;
     width: 3.5rem;
+    margin-right: 0.5rem;
 }
 .bookButton:hover{
     background-color: wheat;
+    transform: scale(1.15);
 }
 
 .removeButton{
@@ -150,4 +157,5 @@
 
 .removeButton:hover{
     background-color: rgb(114, 34, 28);
+    transform: scale(1.15);
 }

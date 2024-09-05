@@ -5,7 +5,7 @@ function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
   this.pages = pages;
-  this.read = read ? 'read' : 'not read yet';
+  this.read = read ? 'Yes' : 'No';
 
   this.toggleRead = function(){
     this.read = !this.read;
@@ -33,7 +33,8 @@ const myLibrary = [book1,book2,book3,book4,book5];
 function displayBooks(){
   const libraryContainer = document.getElementById('bookCards');
   libraryContainer.innerHTML = '';
-  myLibrary.forEach(book => {
+  
+  myLibrary.forEach((book, index) => {
     const bookContainer = document.createElement('div');
     bookContainer.classList.add('book');
 
@@ -49,7 +50,7 @@ function displayBooks(){
     pages.textContent = `Pages: ${book.pages}`;
 
     const isRead = document.createElement('p');
-    isRead.textContent = `Read: ${book.isRead ? "Yes" : "No"}`;
+    isRead.textContent = `Read: ${book.read ? "Yes" : "No"}`;
 
     const bookButton = document.createElement("button");
     bookButton.classList.add("bookButton");
@@ -59,6 +60,15 @@ function displayBooks(){
     removeButton.classList.add("removeButton");
     removeButton.textContent = "Delete";
 
+    bookButton.addEventListener('click', () => {
+      myLibrary[index].toggleRead(); // Toggle the read status of the book
+      displayBooks(); // Re-display the books to update the UI
+    });
+
+    removeButton.addEventListener('click', () => {
+      myLibrary.splice(index, 1); // Remove book from the library
+      displayBooks(); // Re-display the updated library
+    });
 
     bookContainer.appendChild(title);
     bookContainer.appendChild(author);
@@ -70,6 +80,12 @@ function displayBooks(){
     libraryContainer.appendChild(bookContainer);
   })
 }
+
+const addBookButton = document.getElementById('addButton');
+addBookButton.addEventListener('click', () => {
+  console.log('add new');
+  dialog.showModal();
+});
 
 function addBookToLibrary(newBook) {
     myLibrary.push(newBook);
