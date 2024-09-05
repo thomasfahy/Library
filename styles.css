@@ -122,8 +122,9 @@
     #bookCards {
         grid-template-columns: 1fr; /* Change to one column */
         grid-template-rows: auto;
-        padding-left: 5rem;   /* Adjust rows automatically based on content */
+        padding-left: 7rem;   /* Adjust rows automatically based on content */
     }
+    
 }
 
 .bookTitle{
@@ -158,4 +159,18 @@
 .removeButton:hover{
     background-color: rgb(114, 34, 28);
     transform: scale(1.15);
+}
+
+/* Form Styling */
+
+.overlay{
+
+}
+.bookDialog{
+
+}
+#form{
+    height: 60vh;
+    width: 60vw;
+    background-color: var(--secondary-color);
 }

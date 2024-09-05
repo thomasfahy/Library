@@ -81,20 +81,51 @@ function displayBooks(){
   })
 }
 
-const dialog = document.getElementById('bookDialog');
+//Event Listening
 
+const dialog = document.getElementById('bookDialog');
 const addBookButton = document.getElementById('addButton');
 addBookButton.addEventListener('click', () => {
   console.log('add new');
-  dialog.showModal();
+  dialog.showModal(); //Display Form
 });
 
-const closeButton = document.getElementById('closeButton');
-addBookButton.addEventListener('click', () => {
-  console.log('add new');
-  dialog.closeModal();
+
+const closeButton = document.getElementById('close');
+closeButton.addEventListener('click', () => {
+  dialog.close(); //Close Form
 });
 
+const form = document.getElementById('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  let formData = new FormData(form);
+
+  const formTitle = formData.get('title');
+  const formAuthor = formData.get('author');
+  const formPages = formData.get('pages');
+  let formReadStatus = formData.get('read');
+
+  console.log('Title:', formTitle);
+  console.log('Author:', formAuthor);
+  console.log('Pages:', formPages);
+  console.log('Read Status:', formReadStatus);
+  let formRead = "yes";
+  if(formReadStatus = "read"){
+    formRead = "Yes";
+  } else{
+    formRead = "No";
+  }
+  
+  const newBook = new Book(formTitle, formAuthor, formPages, formReadStatus)
+  addBookToLibrary(newBook);
+  console.log(myLibrary);
+  bookDialog.close();
+  displayBooks();
+})
+
+//Functions 
 
 function addBookToLibrary(newBook) {
     myLibrary.push(newBook);
@@ -104,5 +135,8 @@ function createBookCard(book, index){
     const card = document.createElement('div');
     card.className = 'card';
 }
+
+
+//Run on startup
 
 displayBooks();
