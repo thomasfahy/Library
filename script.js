@@ -81,11 +81,20 @@ function displayBooks(){
   })
 }
 
+const dialog = document.getElementById('bookDialog');
+
 const addBookButton = document.getElementById('addButton');
 addBookButton.addEventListener('click', () => {
   console.log('add new');
   dialog.showModal();
 });
+
+const closeButton = document.getElementById('closeButton');
+addBookButton.addEventListener('click', () => {
+  console.log('add new');
+  dialog.closeModal();
+});
+
 
 function addBookToLibrary(newBook) {
     myLibrary.push(newBook);
