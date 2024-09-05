@@ -45,10 +45,11 @@
 
 .topContent{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 15rem 20rem;
     background-color: var(--primary-color);
     padding: 1rem;
     align-items: center;
+    padding-top: 2rem;
 }
 
 #addButton{
@@ -73,7 +74,7 @@
 }
 
 .content{
-    height: 80vh;
+    height: 150vh;
     background-color: var(--primary-color);
 }
 
@@ -123,6 +124,18 @@
         grid-template-columns: 1fr; /* Change to one column */
         grid-template-rows: auto;
         padding-left: 7rem;   /* Adjust rows automatically based on content */
+    }
+    .topContent{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    #addButton{
+        margin-top: 1rem;
+        margin-left: 11rem;
+    }
+    .contentTitle{
+        margin-left: 7rem;
     }
     
 }
