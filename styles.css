@@ -138,3 +138,16 @@
 .bookButton:hover{
     background-color: wheat;
 }
+
+.removeButton{
+    margin-top: 1.6rem;
+    background-color: var(--primary-color);
+    border: 1px solid #303030;
+    border-radius: 15px;
+    height: 1.7rem;
+    width: 3.5rem;
+}
+
+.removeButton:hover{
+    background-color: rgb(114, 34, 28);
+}

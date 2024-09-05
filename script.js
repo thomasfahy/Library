@@ -55,12 +55,17 @@ function displayBooks(){
     bookButton.classList.add("bookButton");
     bookButton.textContent = "Read";
 
+    const removeButton = document.createElement("button");
+    removeButton.classList.add("removeButton");
+    removeButton.textContent = "Delete";
+
 
     bookContainer.appendChild(title);
     bookContainer.appendChild(author);
     bookContainer.appendChild(pages);
     bookContainer.appendChild(isRead);
     bookContainer.appendChild(bookButton);
+    bookContainer.appendChild(removeButton);
 
     libraryContainer.appendChild(bookContainer);
   })
