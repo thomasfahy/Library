@@ -126,3 +126,15 @@
     font-size: 1.2rem;
     padding-bottom: 0.3rem;
 }
+
+.bookButton{
+    margin-top: 1.6rem;
+    background-color: var(--primary-color);
+    border: 1px solid #303030;
+    border-radius: 15px;
+    height: 1.7rem;
+    width: 3.5rem;
+}
+.bookButton:hover{
+    background-color: wheat;
+}

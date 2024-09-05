@@ -51,10 +51,16 @@ function displayBooks(){
     const isRead = document.createElement('p');
     isRead.textContent = `Read: ${book.isRead ? "Yes" : "No"}`;
 
+    const bookButton = document.createElement("button");
+    bookButton.classList.add("bookButton");
+    bookButton.textContent = "Read";
+
+
     bookContainer.appendChild(title);
     bookContainer.appendChild(author);
     bookContainer.appendChild(pages);
     bookContainer.appendChild(isRead);
+    bookContainer.appendChild(bookButton);
 
     libraryContainer.appendChild(bookContainer);
   })
