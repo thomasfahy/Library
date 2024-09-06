@@ -112,6 +112,7 @@ input[type="number"] {
 .bookTitle{
     font-weight: 800;
 }
+
 @media (max-width: 1300px) {
     #bookCards {
         grid-template-columns: 1fr 1fr 1fr 1fr; /* Change to one column */
@@ -190,10 +191,6 @@ input[type="number"] {
 
 /* Form Styling */
 
-.overlay{
-
-
-}
 dialog{
     border: 0px;
     border-radius: 2rem;
