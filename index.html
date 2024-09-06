@@ -10,33 +10,34 @@
 <body>
     <dialog id="bookDialog">
         <div class="overlay">
-            <form id="form" action="" method="dialog">
-                <h3 id="formTitle">Add New Book</h3>
-                <label class="formLabel" for="title">Title</label>
-                <input class="formInput" required name="title" id="title" type="text" placeholder="ej: Harry Potter">
-            
-                <label class="formLabel" for="author">Author</label>
-                <input class="formInput" required name="author" id="author" type="text" placeholder="ej: J. K. Rowling">
-            
-                <label class="formLabel" for="pages">Pages</label>
-                <input class="formInput" required name="pages" id="pages" type="number" placeholder="ej: 870">
-            
-                <div id="formTickboxContainer">
-                    <div class="formTickbox" id="readTickbox">
-                        <label class="readLabel" for="read">Read</label>
-                        <input required value="read" name="read" id="read" type="radio" checked>
-                    </div>
-                    <div class="formTickbox">
-                        <label class="readLabel" for="tbr">To be read</label>
-                        <input required value="to be read" name="read" id="tbr" type="radio">
-                    </div>
-                </div>
+                <form id="form" action="" method="dialog">
+                    <h3 id="formTitle">Add New Book</h3>
+                    <label class="formLabel" for="title">Title</label>
+                    <input class="formInput" required name="title" id="title" type="text" placeholder="ej: Harry Potter">
                 
-                <div id="formButtonContainer">
-                    <button class="formButton" id="saveButton" name="btn_submit" value="save" id="save" type="submit">Save</button>
-                    <button class="formButton" id="closeButton" type="closeButton" name="btn_close" id="close">Close</button>
-                </div>
-            </form>
+                    <label class="formLabel" for="author">Author</label>
+                    <input class="formInput" required name="author" id="author" type="text" placeholder="ej: J. K. Rowling">
+                
+                    <label class="formLabel" for="pages">Pages</label>
+                    <input class="formInput" required name="pages" id="pages" type="number" placeholder="ej: 870">
+                
+                    <div id="formTickboxContainer">
+                        <div class="formTickbox" id="readTickbox">
+                            <label class="readLabel" for="read">Read</label>
+                            <input required value="read" name="read" id="read" type="radio" checked>
+                        </div>
+                        <div class="formTickbox">
+                            <label class="readLabel" for="tbr">To be read</label>
+                            <input required value="to be read" name="read" id="tbr" type="radio">
+                        </div>
+                    </div>
+                
+                    <div id="formButtonContainer">
+                        <button class="formButton" id="saveButton" name="btn_submit" value="save" id="save" type="submit">Save</button>
+                        <button class="formButton" class="closeButton" type="closeButton" name="btn_close" id="close">Close</button>
+                    </div>
+                </form>
+            </dialog>
         </div>
 
     </dialog>
