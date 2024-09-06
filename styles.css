@@ -178,45 +178,79 @@
 
 .overlay{
 
+
 }
 dialog{
-    border: none;
-    background-color: none;
+    border: 0px;
+    border-radius: 2rem;
+    justify-self: center;
+    margin-top: 15vh;
 }
 #form{
-    height: 60vh;
-    width: 60vw;
+    height: 40rem;
+    width: 25rem;
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: 1fr;
     border: none;
     border: 1px solid black;
+    border-radius: 2rem;
 }
 
 #formTitle{
     margin-top: 2rem;
     justify-self: center;
     font-size: 2rem;
+    color: #303030;;
 }
 .formLabel{
     align-self: center;
-    margin-left: 3rem;
+    margin-left: 3.5rem;
     font-weight: 800;
 }
 .formInput{
     margin-left: 3rem;
     margin-right: 3rem;
-    border-radius: 40px;
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border: 1px solid #303030;
+
 }
 .rdBook{
     height: 1rem;
     width: 1rem;
 }
+
 #formButtonContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 6.5rem;
+    margin-right: 4rem;
 }
-.formButton{
-    width: 3rem;
 
+.formButton{
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    border: 1px solid #303030;
+}
+
+.formButton:hover{
+    background-color: wheat;
+    transform: scale(1.15);
+}
+
+#formTickboxContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    margin-left: 6.5rem;
+    margin-right: 2rem;
+}
+
+.formTickbox{
+    padding: 1rem;
+    color: #303030;;
 }
