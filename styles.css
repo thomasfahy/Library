@@ -179,11 +179,44 @@
 .overlay{
 
 }
-.bookDialog{
-
+dialog{
+    border: none;
+    background-color: none;
 }
 #form{
     height: 60vh;
     width: 60vw;
     background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+    border: 1px solid black;
+}
+
+#formTitle{
+    margin-top: 2rem;
+    justify-self: center;
+    font-size: 2rem;
+}
+.formLabel{
+    align-self: center;
+    margin-left: 3rem;
+    font-weight: 800;
+}
+.formInput{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 40px;
+}
+.rdBook{
+    height: 1rem;
+    width: 1rem;
+}
+#formButtonContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.formButton{
+    width: 3rem;
+
 }
