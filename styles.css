@@ -98,13 +98,20 @@ input[type="number"]::-webkit-outer-spin-button {
 #bookCards{
     padding: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
 }
 .bookTitle{
     font-weight: 800;
 }
+@media (max-width: 1600px) {
+    #bookCards {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Change to one column */
+        grid-template-rows: auto;   /* Adjust rows automatically based on content */
+    }
+}
+
 
 @media (max-width: 1300px) {
     #bookCards {
@@ -197,7 +204,7 @@ dialog{
     display: grid;
     grid-template-columns: 1fr;
     border: none;
-    border: 1px solid black;
+    border: 2px solid #303030;
     border-radius: 2rem;
 }
 

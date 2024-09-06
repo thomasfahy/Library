@@ -18,7 +18,7 @@ function Book(title, author, pages, read) {
 
 //Create initial books
 
-let book1 = new Book("Harry Potter", "JK Rowling", 435, true);
+let book1 = new Book("Harry Potter", "JK Rowling", 435, "No");
 let book2 = new Book("The Awakening", "L.J Smith", 256, false);
 let book3 = new Book("The Struggle", "L.J Smith", 304, false);
 let book4 = new Book("The Fury", "L.J Smith", 256, false);
