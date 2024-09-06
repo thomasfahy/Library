@@ -7,6 +7,20 @@
     --third-color: #D1E8E2;
 }
 
+/* Remove button spinner from input box's */
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide spinner for Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
 
 /* Header Section */
 
@@ -225,8 +239,8 @@ dialog{
 #formButtonContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 6.5rem;
-    margin-right: 4rem;
+    gap: 2rem;
+    margin-right: 2px;
 }
 
 .formButton{
@@ -237,6 +251,10 @@ dialog{
     border: 1px solid #303030;
 }
 
+#saveButton{
+    justify-self: end;
+}
+
 .formButton:hover{
     background-color: wheat;
     transform: scale(1.15);
@@ -245,12 +263,17 @@ dialog{
 #formTickboxContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
-    margin-left: 6.5rem;
-    margin-right: 2rem;
+    gap: 3rem;
+    margin-right: 1.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 
 .formTickbox{
-    padding: 1rem;
     color: #303030;;
+    font-size: 1.2rem;
+}
+
+#readTickbox{
+    justify-self: end;
 }

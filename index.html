@@ -22,7 +22,7 @@
                 <input class="formInput" required name="pages" id="pages" type="number" placeholder="ej: 870">
             
                 <div id="formTickboxContainer">
-                    <div class="formTickbox">
+                    <div class="formTickbox" id="readTickbox">
                         <label class="readLabel" for="read">Read</label>
                         <input required value="read" name="read" id="read" type="radio" checked>
                     </div>
@@ -33,8 +33,8 @@
                 </div>
                 
                 <div id="formButtonContainer">
-                    <button class="formButton" name="btn_submit" value="save" id="save" type="submit">Save</button>
-                    <button class="formButton" type="closeButton" name="btn_close" id="close">Close</button>
+                    <button class="formButton" id="saveButton" name="btn_submit" value="save" id="save" type="submit">Save</button>
+                    <button class="formButton" id="closeButton" type="closeButton" name="btn_close" id="close">Close</button>
                 </div>
             </form>
         </div>
